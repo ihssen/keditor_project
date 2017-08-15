@@ -1,0 +1,58 @@
+<section><div class="row"><div class="col-sm-12" data-type="container-content"><section data-type="component-text"><p><a class="btn btn-primary btn-lg" data-target="#modalBtn" data-toggle="modal" href="#" role="button">ffff</a></p>
+</section><section data-type="component-text"><p><a class="btn btn-primary btn-lg" data-target="#modalBtn" data-toggle="modal" href="#" role="button">test</a></p>
+</section><section data-type="component-carousel" data-website="website01"><div class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel3" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="snippets/default/preview/video.png" alt="Los Angeles">
+      </div>
+
+      <div class="item">
+        <img src="snippets/default/preview/vimeo.png" alt="Chicago">
+      </div>
+
+      <div class="item">
+        <img src="snippets/default/preview/youtube.png" alt="New York">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div></section><section data-type="component-text" data-categories="Text;Heading;Photo"><div class="row">
+<div class="col-md-4 text-center"><img class="img-circle img-responsive" src="snippets/default/img/somewhere_bangladesh_squared.jpg" style="display: inline-block;">
+<h3>Lorem ipsum</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, alias, temporibus? Vero natus modi ipsa debitis, accusamus accusantium cum quam. Saepe atque quisquam pariatur voluptatem expedita nesciunt reprehenderit et vitae.</p>
+</div>
+
+<div class="col-md-4 text-center"><img class="img-circle img-responsive" src="snippets/default/img/wellington_newzealand_squared.jpg" style="display: inline-block;">
+<h3>Lorem ipsum</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, aut, earum. Quod, debitis, delectus. Maxime eius ipsam sit dolorum perspiciatis obcaecati consectetur, explicabo reprehenderit repellat tempore veniam eos ducimus! Dignissimos.</p>
+</div>
+
+<div class="col-md-4 text-center"><img class="img-circle img-responsive" src="snippets/default/img/yenbai_vietnam_squared.jpg" style="display: inline-block;">
+<h3>Lorem ipsum</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus dicta corrupti aliquam, natus voluptatem pariatur quidem nostrum nisi corporis id ratione exercitationem et recusandae incidunt assumenda soluta qui odit.</p>
+</div>
+</div>
+</section><section data-type="component-text"><p><a class="btn btn-primary btn-lg" href="#" role="button">Primary</a></p>
+</section><section data-type="component-photo" data-categories="Media;Photo"><div class="photo-panel">
+        <img src="snippets/default/img/somewhere_bangladesh.jpg" style="display: inline-block;" width="100%" height="">
+    </div></section><section data-type="component-text" data-categories="Text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore architecto fuga tempore omnis aliquid, rerum numquam deleniti ipsam earum velit aliquam deserunt, molestiae officiis mollitia accusantium suscipit fugiat esse magnam eaque cumque, iste corrupti magni? Illo dicta saepe, maiores fugit aliquid consequuntur aut, rem ex iusto dolorem molestias obcaecati eveniet vel voluptatibus recusandae illum, voluptatem! Odit est possimus nesciunt.</p>
+</section></div> </div></section>

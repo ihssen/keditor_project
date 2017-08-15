@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>KEditor - Kademi Content Editor</title>
+  <link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.6/css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.5.0/css/font-awesome.min.css"/>
+  <!-- Start of KEditor styles -->
+  <link rel="stylesheet" type="text/css" href="../dist/css/keditor-1.1.5.min.css"/>
+  <link rel="stylesheet" type="text/css" href="../dist/css/keditor-components-1.1.5.min.css"/>
+  <!-- End of KEditor styles -->
+  <link rel="stylesheet" type="text/css" href="css/examples.css"/>
+  <script type="text/javascript" src="plugins/jquery-1.11.3/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="plugins/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+      var bsTooltip = $.fn.tooltip;
+      var bsButton = $.fn.button;
+  </script>
+  <script src="plugins/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript">
+      $.widget.bridge('uibutton', $.ui.button);
+      $.widget.bridge('uitooltip', $.ui.tooltip);
+      $.fn.tooltip = bsTooltip;
+      $.fn.button = bsButton;
+  </script>
+  <script type="text/javascript" src="plugins/jquery.nicescroll-3.6.6/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="plugins/ckeditor-4.5.6/ckeditor.js"></script>
+  <script type="text/javascript" src="plugins/ckeditor-4.5.6/adapters/jquery.js"></script>
+  <!-- Start of KEditor scripts -->
+  <script type="text/javascript" src="../dist/js/keditor-1.1.5.js"></script>
+  <script type="text/javascript" src="../dist/js/keditor-components-1.1.5.min.js"></script>
+  <!-- End of KEditor scripts -->
+</head>
+
+<body>
+  <button id="saveContent" type="button" style="margin-right:20%; margin-top: 20px;" class="pull-right btn btn-success">
+    Save
+</button>
+<div id="content-area"></div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('#modalBtn').on('hidden.bs.modal', function (e) {
+      var btnText=$('#btnText').val();
+      console.log($($($(currentDroppedComponent).children()[0]).children()).children())
+      // à optimiser
+      $($($($(currentDroppedComponent).children()[0]).children()).children()[0]).html(btnText);
+
+  });
+
+    var currentDroppedComponent;
+    $.ajax({
+      url: 'http://localhost:3001/getContent',
+      type: 'GET',
+      success: function (data) {
+        if (data.error) {
+          alert('error');
+      }else{
+          $('#content-area').html(data.content);
+          $('#content-area').keditor({
+            snippetsListId: 'keditor-snippets-list',
+            onComponentSnippetDropped: function (event, selectedComponent,droppedComponent) {
+              console.log('Callback "onComponentSnippetDropped"', event,selectedComponent,droppedComponent);
+              if($(droppedComponent[0]).attr('data-keditor-categories')==='Button Bootstrap'){
+                currentDroppedComponent=selectedComponent;
+                $('#modalBtn').modal('show')
+            }
+        }
+    });
+      }
+  },
+  error: function (e) {
+    alert('error');
+}
+})
+    $('#saveContent').click(function () {
+      var content = $('#content-area').keditor('getContent');
+      $.ajax({
+        url: 'http://localhost:3001/saveContent',
+        type: 'POST',
+        data: {
+          content: content
+      },
+      dataType: 'json',
+      success: function () {
+          alert('success');
+      },
+      error: function (e) {
+          alert('error');
+      }
+  })
+  });
+
+
+    $.keditor.debug = false;
+
+
+
+});
+
+</script>
+<div class="modal fade" id="modalBtn" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+
+
+          <input id="btnText" type="text" name="btnText">
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>
