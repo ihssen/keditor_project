@@ -1,6 +1,8 @@
-<section><div class="row"><div class="col-sm-12" data-type="container-content"><section data-type="component-text"><p><a class="btn btn-primary btn-lg" data-target="#modalBtn" data-toggle="modal" href="#" role="button">ffff</a></p>
-</section><section data-type="component-text"><p><a class="btn btn-primary btn-lg" data-target="#modalBtn" data-toggle="modal" href="#" role="button">test</a></p>
-</section><section data-type="component-carousel" data-website="website01"><div class="carousel slide" data-ride="carousel">
+<section><div class="row">
+        <div class="col-sm-4" data-type="container-content">
+        </div>
+        <div class="col-sm-4" data-type="container-content">
+        <section data-type="component-carousel" data-website="website01"><div class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,27 +34,20 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div></section><section data-type="component-text" data-categories="Text;Heading;Photo"><div class="row">
-<div class="col-md-4 text-center"><img class="img-circle img-responsive" src="snippets/default/img/somewhere_bangladesh_squared.jpg" style="display: inline-block;">
-<h3>Lorem ipsum</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, alias, temporibus? Vero natus modi ipsa debitis, accusamus accusantium cum quam. Saepe atque quisquam pariatur voluptatem expedita nesciunt reprehenderit et vitae.</p>
-</div>
-
-<div class="col-md-4 text-center"><img class="img-circle img-responsive" src="snippets/default/img/wellington_newzealand_squared.jpg" style="display: inline-block;">
-<h3>Lorem ipsum</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, aut, earum. Quod, debitis, delectus. Maxime eius ipsam sit dolorum perspiciatis obcaecati consectetur, explicabo reprehenderit repellat tempore veniam eos ducimus! Dignissimos.</p>
-</div>
-
-<div class="col-md-4 text-center"><img class="img-circle img-responsive" src="snippets/default/img/yenbai_vietnam_squared.jpg" style="display: inline-block;">
-<h3>Lorem ipsum</h3>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil voluptatibus dicta corrupti aliquam, natus voluptatem pariatur quidem nostrum nisi corporis id ratione exercitationem et recusandae incidunt assumenda soluta qui odit.</p>
-</div>
-</div>
-</section><section data-type="component-text"><p><a class="btn btn-primary btn-lg" href="#" role="button">Primary</a></p>
-</section><section data-type="component-photo" data-categories="Media;Photo"><div class="photo-panel">
-        <img src="snippets/default/img/somewhere_bangladesh.jpg" style="display: inline-block;" width="100%" height="">
-    </div></section><section data-type="component-text" data-categories="Text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro labore architecto fuga tempore omnis aliquid, rerum numquam deleniti ipsam earum velit aliquam deserunt, molestiae officiis mollitia accusantium suscipit fugiat esse magnam eaque cumque, iste corrupti magni? Illo dicta saepe, maiores fugit aliquid consequuntur aut, rem ex iusto dolorem molestias obcaecati eveniet vel voluptatibus recusandae illum, voluptatem! Odit est possimus nesciunt.</p>
-</section></div> </div></section>
+  </div></section></div>
+        <div class="col-sm-4" data-type="container-content">
+        <section data-type="component-nonExisting" data-website="website01" data-blog="blog01" data-article="article01" data-tags="tag01,tag02"><div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" aria-expanded="false">Tutorials
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" data-toggle="modal" data-target="#modalBtn">
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">HTML</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">CSS</a></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">JavaScript</a></li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">About Us</a></li>
+    </ul>
+  </div></section></div>
+    </div></section><section><div class="row">
+        <div class="col-sm-12" data-type="container-content">
+        </div>
+    </div></section>
