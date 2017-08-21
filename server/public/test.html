@@ -85,6 +85,10 @@
             currentDroppedComponent=selectedComponent;
             $('#modalBtn').modal('show')
           }
+          if($(droppedComponent[0]).attr('data-keditor-categories')==='combobox'){
+            currentDroppedComponent=selectedComponent;
+            $('#modalCbx').modal('show')
+          }
 
         }
       });

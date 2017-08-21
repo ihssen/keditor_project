@@ -1,22 +1,23 @@
 <section><div class="row">
         <div class="col-sm-4" data-type="container-content">
-        </div>
+        <section data-type="component-text"><p><a class="myBtn btn btn-default btn-lg btn-success" data-original-title="" data-placement="left" data-target="#modalBtn" data-toggle="modal" href="#" role="button" title="this is btn">btn test</a></p>
+</section></div>
         <div class="col-sm-4" data-type="container-content">
         <section data-type="component-carousel" data-website="website01"><div class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel2" data-slide-to="1"></li>
-      <li data-target="#myCarousel3" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel2" data-slide-to="1" class="active"></li>
+      <li data-target="#myCarousel3" data-slide-to="2" class=""></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
-      <div class="item active">
+      <div class="item">
         <img src="snippets/default/preview/video.png" alt="Los Angeles">
       </div>
 
-      <div class="item">
+      <div class="item active">
         <img src="snippets/default/preview/vimeo.png" alt="Chicago">
       </div>
 
